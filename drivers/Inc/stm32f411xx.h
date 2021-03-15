@@ -141,8 +141,15 @@ typedef struct{
 /* ENABLE CLOCK DEFINATION UART*/
 #define USART1_PCLK_EN() (RCC->APB2ENR |=(1<<4))
 #define USART2_PCLK_EN() (RCC->APB1ENR |=(1<<17))
-#define USART1_PCLK_EN() (RCC->APB2ENR |=(1<<5))
+#define USART6_PCLK_EN() (RCC->APB2ENR |=(1<<5))
 
+/* DISABLE CLOCK definition GPIO */
+#define GPIOA_PCLK_DL() (RCC->AHB1ENR &= ~(1<<0))
+#define GPIOB_PCLK_DL() (RCC->AHB1ENR &= ~(1<<1))
+#define GPIOC_PCLK_DL() (RCC->AHB1ENR &= ~(1<<2))
+#define GPIOD_PCLK_DL() (RCC->AHB1ENR &= ~(1<<3))
+#define GPIOE_PCLK_DL() (RCC->AHB1ENR &= ~(1<<4))
+#define GPIOH_PCLK_DL() (RCC->AHB1ENR &= ~(1<<7))
 
 
 
