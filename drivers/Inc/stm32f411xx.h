@@ -159,8 +159,4 @@ typedef struct{
 
 
 
-
-
-
-
 #endif /* INC_STM32F411XX_H_ */
