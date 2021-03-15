@@ -138,6 +138,20 @@ typedef struct{
 #define SPI4_PCLK_EN()  (RCC->APB2ENR |=(1<<13))
 #define SPI5_PCLK_EN()  (RCC->APB2ENR |=(1<<20))
 
+/* ENABLE CLOCK DEFINATION UART*/
+#define USART1_PCLK_EN() (RCC->APB2ENR |=(1<<4))
+#define USART2_PCLK_EN() (RCC->APB1ENR |=(1<<17))
+#define USART1_PCLK_EN() (RCC->APB2ENR |=(1<<5))
+
+
+
+
+
+
+
+
+
+
 
 
 
