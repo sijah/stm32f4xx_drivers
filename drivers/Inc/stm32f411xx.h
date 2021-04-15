@@ -151,6 +151,13 @@ typedef struct{
 #define GPIOE_PCLK_DL() (RCC->AHB1ENR &= ~(1<<4))
 #define GPIOH_PCLK_DL() (RCC->AHB1ENR &= ~(1<<7))
 
+//some marco
+#define ENABLE     1
+#define DISABLE    0
+#define SET       ENABLE
+#define RESET     DISABLE
+#define GPIO_PIN_SET ENABLE
+#define GPIO_PIN_RESET RESET
 
 
 
