@@ -33,7 +33,7 @@ typedef struct
  *
  * @brief             - This function enables or disables peripheral clock for the given GPIO port
  *
- * @param[in]         - base address of the gpio peripheral
+ * @param[in]         - base address of the GPIO peripheral
  * @param[in]         - ENABLE or DISABLE macros
  * @param[in]         -
  *
